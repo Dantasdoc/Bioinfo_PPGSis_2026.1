@@ -140,9 +140,9 @@ qiime demux emp-paired \
 
 # Subamostrar para agilizar as etapas seguintes em sala (30% das reads por amostra)
 qiime demux subsample-paired \
-  --i-sequences  demux-full.qza \
+  --i-sequences  4_qza/demux-full.qza \
   --p-fraction   0.3 \
-  --o-subsampled-sequences demux.qza
+  --o-subsampled-sequences 4_qza/demux.qza
 # --i-sequences : artefato demultiplexado completo
 # --p-fraction  : proporção de reads a manter por amostra (0.0 a 1.0)
 # --o-subsampled-sequences: artefato subamostrado para uso em aula
